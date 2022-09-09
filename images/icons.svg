@@ -69,5 +69,8 @@
  <symbol id="hover" viewBox="0 0 384 32">
       <path d="M16 0h352c8.837 0 16 7.163 16 16s-7.163 16-16 16H16C7.163 32 0 24.837 0 16S7.163 0 16 0z"/>
     </symbol>
+    <symbol id="icon-mail" viewBox="0 0 32 32">
+      <path d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z"/>
+    </symbol>
   </defs>
 </svg>
