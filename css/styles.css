@@ -303,9 +303,9 @@ body {
   border-radius: 4px;
   border: var(--accent-color)
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
+  margin-right:auto;
+  margin-left:auto;
+  display:block;
 }
 
 /* Модальне вікно */
@@ -361,6 +361,148 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ЗАЯВКА */
+.form {
+  width: 528px;
+  height: 581px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.form-title {
+margin-bottom: 12px;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+}
+
+
+
+.icon-application {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+
+}
+
+.personal-data input {
+ height: 40px;
+ border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+
+
+ 
+}
+
+
+
+.personal-data input:hover,
+.personal-data input:focus {
+border: 1px solid #2196F3;
+border-radius: 4px;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+.modal-application textarea {
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.modal-application textarea:hover,
+.modal-application textarea:focus {
+border: 1px solid #2196F3;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.modal-application label {
+color: #757575;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+letter-spacing: 0.01em;
+margin-bottom: 4px;
+
+
+
+
+}
+.personal-data {
+  
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.conditions {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.conditions label {
+  color: #757575;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+
+}
+
+.conditions input {
+margin-right: 9px;
+}
+
+.icon-check {
+  margin-right: 9px;
+}
+
+ .button-application {
+ color: #FFFFFF;
+font-style: normal;
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+cursor: pointer;
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+width: 200px;
+height: 50px;
+  background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: var(--accent-color);
+display: block;
+margin-left: auto;
+margin-right: auto;
+ }
 
 .section {
   padding-top: 94px;
@@ -773,8 +915,16 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 /* ПІДПИСКА НА РОЗСИЛКУ */
 
+.subscription-box {
+  margin-left: 105px;
+
+}
+
 .icon-mail {
   fill: var(--primary-text-color);
+  width: 24px;
+  right: 24px;
+  margin-left: 12px;
   
 }
 
@@ -787,13 +937,15 @@ font-size: 14px;
 line-height: 16px;
 
 text-transform: uppercase;
+margin-bottom: 20px;
+
 }
 
 .button-subscription {
 color:var(--primary-text-color);
 font-family: inherit;
 font-style: normal;
-font-weight: 700;
+font-weight: 700px;
 font-size: 16px;
 line-height: 30px;
 width: 200px;
@@ -801,8 +953,7 @@ height: 50px;
 padding-bottom: 10px;
 padding-top: 10px;
 padding-left: 28px;
-padding-right: 62px;
-
+padding-right: 13px;
 display: flex;
 align-items: center;
 text-align: center;
@@ -812,6 +963,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin-left: 215px;
 margin-right: 12px;
-
 }
+
 
