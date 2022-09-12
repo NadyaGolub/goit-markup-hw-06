@@ -147,6 +147,8 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  padding-bottom: 32px;
+  padding-top: 32px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -362,14 +364,23 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-btn:hover,
+.modal-btn:focus {
+  fill:var(--accent-color);
+  cursor: pointer;
+}
+
+
 /* ЗАЯВКА */
 .form {
   width: 528px;
-  height: 581px;
+  
   
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
 }
 
 .form-title {
@@ -379,6 +390,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 23px;
 text-align: center;
+padding-top: 40px;
 }
 .personal-data {
   position: relative;
@@ -400,9 +412,13 @@ text-align: center;
  border: 1px solid rgba(33, 33, 33, 0.2);
  border-radius: 4px;
  padding-left: 42px;
+ transition-property: border, border-radius,cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.personal-data input:hover .icon-application {
+.personal-data input:hover+.icon-application,
+.personal-data input:focus+.icon-application  {
   fill: var(--accent-color);
 }
 
@@ -413,17 +429,42 @@ border-radius: 4px;
 cursor: pointer;
 }
 
-.modal-application textarea {
+.personal-data textarea {
 height: 120px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+resize: none;
+padding-left: 16px;
+padding-bottom: 12px;
+padding-right: 16px;
+padding-top: 12px;
+margin-bottom: 10px;
+transition-property: border, border-radius,cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.modal-application textarea:hover,
-.modal-application textarea:focus {
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+ font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+padding: 0;
+
+color: rgba(117, 117, 117, 0.5);
+
+}
+
+
+.personal-data textarea:hover,
+.personal-data textarea:focus {
 border: 1px solid #2196F3;
 border-radius: 4px;
 cursor: pointer;
+
 }
 
 .modal-application label {
@@ -486,6 +527,15 @@ border: var(--accent-color);
 display: block;
 margin-left: auto;
 margin-right: auto;
+margin-bottom: 10px;
+transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ .button-application:hover,
+ .button-application:focus {
+  background-color: #188CE8;
  }
 
 .section {
@@ -714,7 +764,8 @@ margin-right: auto;
 .animation-link:hover,
 .animation-link:focus {
 border: 1px solid #EEEEEE;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .animation-link:hover,
@@ -900,7 +951,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 /* ПІДПИСКА НА РОЗСИЛКУ */
 
 .subscription-box {
-  margin-left: 105px;
+ margin-left: auto;
+ 
 
 }
 
@@ -946,6 +998,9 @@ background-color:var(--accent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border-color: var(--accent-color);
+transition-property: cursor;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -954,16 +1009,18 @@ border-color: var(--accent-color);
   cursor: pointer;
 }
 
-.test {
+.form-text {
   display: flex;
   gap: 12px;
 }
 
-.test input {
-  background-color:var(--brand-color);
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.form-text input {
+background-color:var(--brand-color);
+color: rgba(255, 255, 255, 0.6);
+padding-left: 16px;
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 }
@@ -972,6 +1029,6 @@ border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   padding-bottom: 15px;
   padding-top: 15px;
-  padding-left: 16px;
+  
 }
 
